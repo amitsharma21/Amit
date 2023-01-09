@@ -37,7 +37,7 @@ app.post("/upload",async(req,res)=>{
 
     file.mv(inputVideo);
 
-    const text= `${req.body.firstName} ${req.body.lastName} click on the video`;
+    const text= `${req.body.firstName} ${req.body.lastName} ${req.body.customMessage}`;
     const input ={
         Text: text,
         OutputFormat: "mp3",
